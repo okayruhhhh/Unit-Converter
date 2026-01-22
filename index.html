@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<link rel="stylesheet"	href="style.css" />
+		<title>Unit Converter</title>
+	</head>
+	<body>
+	<div class="container">
+		<h1>Unit Converter</h1>
+		<form onSubmit="convert(event)">
+			<input type="number" placeholder="Enter Value " id="value" />
+			<select id="category" onChange="updateUnits()">
+				<option value="time">Time</option>
+				<option value="speed">Speed</option>
+				<option value="distance">Distance</option>
+			</select>
+			<label>From </label>
+			<select id="fromUnit"></select>
+			<label>To </label>
+			<select id="toUnit"></select>
+			<input type="submit" value="Convert"/>
+		</form>
+		<h2 id="msg"></h2>
+	</div>
+	<script src="script.js"></script>
+	</body>
+</html>
